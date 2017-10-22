@@ -1,7 +1,7 @@
 {
   "name": "random-access-s3",
   "version": "0.0.2",
-  "description": "A random access interface for aws s3 buckets",
+  "description": "A read-only random access interface for aws s3 buckets",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +13,10 @@
   ],
   "author": "Benjamin Forster",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-e-e/random-access-s3.git"
+  },
   "dependencies": {
     "abstract-random-access": "^1.1.2",
     "inherits": "^2.0.3"
