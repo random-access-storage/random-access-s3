@@ -1,2 +1,4 @@
 node_modules/
+s3dat/
 *.log
+config.json
