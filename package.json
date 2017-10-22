@@ -1,6 +1,6 @@
 {
   "name": "random-access-s3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A random access interface for aws s3 buckets",
   "main": "index.js",
   "scripts": {
