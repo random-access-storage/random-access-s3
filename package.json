@@ -4,7 +4,8 @@
   "description": "A read-only random access interface for aws s3 buckets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && tape tests/**.test.js",
+    "tdd": "tape-watch tests/**.test.js"
   },
   "keywords": [
     "aws",
@@ -22,5 +23,10 @@
     "random-access-storage": "^1.1.0"
   },
   "devDependencies": {
+    "proxyquire": "^1.8.0",
+    "sinon": "^4.2.2",
+    "standard": "^10.0.3",
+    "tape": "^4.8.0",
+    "tape-watch": "^2.3.0"
   }
 }
