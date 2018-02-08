@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && tape tests/**.test.js",
-    "tdd": "tape-watch tests/**.test.js"
+    "test-travis": "nyc tape tests/**.test.js | tap-spec",
+    "tdd": "tape-watch tests/**.test.js",
+    "report-coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "keywords": [
     "aws",
@@ -23,9 +25,12 @@
     "random-access-storage": "^1.1.0"
   },
   "devDependencies": {
+    "coveralls": "^3.0.0",
+    "nyc": "^11.4.1",
     "proxyquire": "^1.8.0",
     "sinon": "^4.2.2",
     "standard": "^10.0.3",
+    "tap-spec": "^4.1.1",
     "tape": "^4.8.0",
     "tape-watch": "^2.3.0"
   }
