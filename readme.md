@@ -1,11 +1,12 @@
 # random-access-s3
+[![Build Status](https://travis-ci.org/random-access-storage/random-access-s3.svg?branch=master)](https://travis-ci.org/random-access-storage/random-access-s3) [![Coverage Status](https://coveralls.io/repos/github/random-access-storage/random-access-s3/badge.svg?branch=master)](https://coveralls.io/github/random-access-storage/random-access-s3?branch=master)
 
-An implementation of [abstract-random-access](https://www.npmjs.com/package/abstract-random-access) on top of an AWS S3 bucket.
+An implementation of [random-access-storage](https://www.npmjs.com/package/random-access-storage) on top of an AWS S3 bucket.
 Providing the same interface as [random-access-file](https://www.npmjs.com/package/random-access-file) and [random-access-memory](https://www.npmjs.com/package/random-access-memory).
 
 ## Why?
-This is an experiment to see if we can serve [dat](http://datproject.org) data over aws s3. It is possible.
 
+This is an experiment to see if we can serve [dat](http://datproject.org) data over aws s3. It is possible.
 **TLDR;**  Latency is a killer.
 
 ## Installation
